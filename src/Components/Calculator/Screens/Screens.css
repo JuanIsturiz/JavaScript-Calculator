@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "DS-Digital";
+  src: url("../../../assets/fonts/digital/DS-DIGI.TTF");
+}
+
+.calculator .screen {
+  max-width: 21rem;
+  overflow: hidden;
+  word-wrap: unset;
+  font-family: "DS-Digital";
+  background-color: black;
+  justify-self: flex-end;
+  text-align: end;
+}

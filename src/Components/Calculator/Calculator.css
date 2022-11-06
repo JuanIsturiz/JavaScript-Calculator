@@ -1,0 +1,39 @@
+.border {
+  border: #141115ff solid .15rem;
+  margin-bottom: .75rem;
+}
+
+.calculator {
+  width: 22rem;
+  height: 72vh;
+  background-color: black;
+  border: black solid .25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr repeat(5, 2fr);
+  grid-template-areas:
+    "yellow yellow yellow yellow"
+    "white white white white"
+    "clear clear divide multiply"
+    "seven eight nine substract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals";
+}
+
+.calculator>* {
+  font-size: 1.25rem;
+  color: white;
+  border: black solid .1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141115ff;
+}
+
+.calculator>button:hover {
+  cursor: pointer;
+  border-color: #999;
+  color: black;
+  transform: scale(1.025);
+}
